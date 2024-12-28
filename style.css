@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+    
+}
+
+.calculator {
+    width: 300px;
+    height: 440px;
+    border-radius: 20px;
+    background-color:lightcyan;
+}
+
+#screen-input,#display{
+    font-size: 1.5rem;
+    margin:30px 25px;
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    border: none;
+    text-align: right;
+    box-shadow:
+    -7px -7px 15px rgb(255, 255, 255,0.65),
+    7px 7px 15px rgb(70, 70, 70,0.12),
+    inset -7px -7px 15px rgb(255, 255, 255,0.65),
+    inset 7px 7px 15px rgb(70, 70, 70,0.12);
+}
+#screen-input,#display:focus{
+    outline: none;
+}
+.btn {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    box-shadow:
+    -10px -10px 15px rgb(255, 255, 255,0.5),
+    -10px 10px 15px rgb(70, 70, 70,0.12);
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow:
+    -10px -10px 15px rgb(255, 255, 255,0.5),
+    10px 10px 15px rgb(70, 70, 70,0.12),
+    inset -10px -10px 15px rgb(255, 255, 255,0.5),
+    inset 10px 10px 15px rgb(70, 70, 70,0.12);
+}
+
+.addition{
+    height: 110px;
+}
+.cancel-btn{
+  color: red;
+  width: 115px;
+}
+.cancel-btn:hover{
+    background-color:rgb(255, 227, 227);
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+

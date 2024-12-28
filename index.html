@@ -1,0 +1,57 @@
+ <!-- making calculator with html css and javascript -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>  
+    <div class="container">
+        <div class="calculator">
+            <div class="screen">
+                <input type="text" id="screen-input" placeholder="0 "><br/>
+            </div>   
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td colspan="2"><button class="btn cancel-btn" id="clear">AC</button></td>
+                        <td><button class="btn" id="backspace">←</button></td>
+                        <td><button class="btn" id="divide">/</button><br></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn" id="seven">7</button></td>
+                        <td><button class="btn" id="eight">8</button></td>
+                        <td><button class="btn" id="nine">9</button></td>
+                        <td rowspan="2"><button class="btn addition" id="add">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn" id="four">4</button></td>
+                        <td><button class="btn" id="five">5</button></td>
+                        <td><button class="btn" id="six">6</button></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><button class="btn" id="one">1</button></td>
+                        <td><button class="btn" id="two">2</button></td>
+                        <td><button class="btn" id="three">3</button></td>
+                        <td><button class="btn" id="subtract">-</button><br></td>                        
+                    </tr>
+                    <tr>
+                        <td><button class="btn" id="zero">0</button></td>
+                        <td><button class="btn" id="sq">X<sup>2</sup></button></td>
+                        <td><button class="btn" id="multiply">*</button></td>
+                        <td><button class="btn" id="ans">=</button></td>
+                        
+                    </tr>
+                </table>
+                <audio id="button-sound" src="mixkit-mouse-click-close-1113.wav"></audio>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
